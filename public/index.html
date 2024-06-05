@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Node.js Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Quantum Node.js Website</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <p>This website integrates AI and quantum computing functionalities.</p>
+        </section>
+        <section id="ai-section">
+            <h2>AI Operations</h2>
+            <form id="ai-form">
+                <label for="ai-data">Enter Data:</label>
+                <textarea id="ai-data" name="ai-data" rows="4" cols="50"></textarea>
+                <button type="button" onclick="trainModel()">Train Model</button>
+            </form>
+            <div id="ai-result"></div>
+        </section>
+        <section id="quantum-section">
+            <h2>Quantum Operations</h2>
+            <form id="quantum-form">
+                <label for="quantum-circuit">Enter Quantum Circuit:</label>
+                <textarea id="quantum-circuit" name="quantum-circuit" rows="4" cols="50"></textarea>
+                <button type="button" onclick="runQuantumJob()">Run Quantum Job</button>
+            </form>
+            <div id="quantum-result"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
